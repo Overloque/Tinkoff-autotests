@@ -2,8 +2,6 @@ package guru.qa.config;
 
 import org.aeonbits.owner.Config;
 
-import java.net.URL;
-
 @Config.Sources({
         "classpath:${environment}.properties"
 })
@@ -29,5 +27,6 @@ public interface WebConfig extends Config {
     String remoteUrl();
 
     @Key("isRemote")
+    @DefaultValue("false")
     Boolean isRemote();
 }
