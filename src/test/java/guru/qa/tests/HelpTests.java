@@ -8,7 +8,6 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import static com.codeborne.selenide.Selenide.sleep;
 import static io.qameta.allure.Allure.step;
 
 @Tag("help")
@@ -29,7 +28,7 @@ public class HelpTests extends TestBase {
     void checkPageTitleAfterSearch(String searchInput, String value) {
         step("Открытие главной страницы", () ->
                 mainPage.openPage());
-        step("Выбор у popover'а 'Еще' пункта 'Аналитика' ", () ->
+        step("Выбор у popover'а 'Еще' пункта 'Спрашивают сейчас' ", () ->
                 helpPage.hoverAndClick());
         step("Активация поля ввода по клику", () ->
                 helpPage.clickSearchField());

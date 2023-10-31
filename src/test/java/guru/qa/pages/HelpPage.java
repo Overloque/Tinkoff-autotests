@@ -11,8 +11,7 @@ public class HelpPage {
     private final SelenideElement
             menuPopover = $(byText("Еще")),
             questionsOption = $("[data-item-type='/help/what-to-do/']"),
-            searchField = $("[data-qa-type='uikit/inputAutocomplete.inputBox']"),
-            inputField = $("[data-qa-type='uikit/inputAutocomplete.value.input']"),
+            searchField = $("[data-qa-type='uikit/inputAutocomplete.value.input']"),
             firstSearchTip = $("[data-qa-type='uikit/dropdown.item.title']"),
             title = $("[data-level='1']");
 
@@ -31,7 +30,7 @@ public class HelpPage {
     }
 
     public HelpPage typeRequest(String request) {
-        inputField.sendKeys(request);
+        searchField.sendKeys(request);
 
         return this;
     }
