@@ -8,8 +8,9 @@ import static io.qameta.allure.Allure.step;
 
 @Tag("loans")
 @Feature("Проверка раздела 'Кредиты и ипотека'")
+@Epic(value = "Проверка сайта Тинькофф")
 @Owner("Overloque")
-public class CreditTests extends BaseTest {
+public class CreditTests extends TestBase {
     CreditPage creditPage = new CreditPage();
 
     @Test

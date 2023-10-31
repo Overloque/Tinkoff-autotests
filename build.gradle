@@ -72,3 +72,15 @@ task savings_test(type: Test) {
         includeTags("savings")
     }
 }
+
+task analytics_test(type: Test) {
+    useJUnitPlatform{
+        includeTags("analytics")
+    }
+}
+
+task help_test(type: Test) {
+    useJUnitPlatform{
+        includeTags("help")
+    }
+}

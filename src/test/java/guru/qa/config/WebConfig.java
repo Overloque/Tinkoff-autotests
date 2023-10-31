@@ -13,7 +13,7 @@ public interface WebConfig extends Config {
 
     @Key("browser")
     @DefaultValue("CHROME")
-    Browser browser();
+    String browser();
 
     @Key("browserSize")
     @DefaultValue("2560x1440")
@@ -25,8 +25,4 @@ public interface WebConfig extends Config {
 
     @Key("remoteUrl")
     String remoteUrl();
-
-    @Key("isRemote")
-    @DefaultValue("false")
-    Boolean isRemote();
 }

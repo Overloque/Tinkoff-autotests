@@ -8,8 +8,9 @@ import static io.qameta.allure.Allure.step;
 
 @Tag("main")
 @Feature("Проверка главной страницы")
+@Epic(value = "Проверка сайта Тинькофф")
 @Owner("Overloque")
-public class MainTests extends BaseTest {
+public class MainTests extends TestBase {
     MainPage mainPage = new MainPage();
 
     @Test

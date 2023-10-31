@@ -4,12 +4,8 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import guru.qa.config.WebConfig;
-import guru.qa.config.WebProvider;
+import guru.qa.drivers.WebProvider;
 import guru.qa.helpers.Attach;
-import guru.qa.pages.CreditPage;
-import guru.qa.pages.DebitCardPage;
-import guru.qa.pages.MainPage;
-import guru.qa.pages.SavingsPage;
 import guru.qa.utils.TestDataVariables;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.aeonbits.owner.ConfigFactory;
@@ -22,14 +18,21 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class BaseTest {
+public class TestBase {
     TestDataVariables variables = new TestDataVariables();
-    private static final WebConfig config = ConfigFactory.create(WebConfig.class, System.getProperties());
 
     @BeforeAll
     static void beforeAll() {
-        WebProvider webProvider = new WebProvider(config);
-        webProvider.webConfiguration();
+        WebProvider.config();
+        Configuration.pageLoadStrategy = "eager";
+
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        Map<String, Object> value = new HashMap<>();
+        value.put("enableVNC", true);
+        value.put("enableVideo", true);
+        capabilities.setCapability("selenoid:options", value);
+
+        Configuration.browserCapabilities = capabilities;
     }
 
     @BeforeEach

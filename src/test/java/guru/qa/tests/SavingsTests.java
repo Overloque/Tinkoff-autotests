@@ -8,8 +8,9 @@ import static io.qameta.allure.Allure.step;
 
 @Tag("savings")
 @Feature("Проверка раздела 'Вклады'")
+@Epic(value = "Проверка сайта Тинькофф")
 @Owner("Overloque")
-public class SavingsTests extends BaseTest {
+public class SavingsTests extends TestBase {
     SavingsPage savingsPage = new SavingsPage();
 
     @Test

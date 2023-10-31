@@ -8,8 +8,9 @@ import static io.qameta.allure.Allure.step;
 
 @Tag("debit")
 @Feature("Проверка раздела 'Дебетовые карты'")
+@Epic(value = "Проверка сайта Тинькофф")
 @Owner("Overloque")
-public class DebitCardTests extends BaseTest {
+public class DebitCardTests extends TestBase {
     DebitCardPage debitCardPage = new DebitCardPage();
 
     @Test
