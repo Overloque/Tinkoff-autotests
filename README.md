@@ -76,7 +76,7 @@
 ### Запуск тестов с параметрами в **Jenkins**
 
 <p align="center">
-<img src="images/screenshots/JenkinsLaunch.jpg" alt="Jenkins Launch" width="1000" height="500">
+<img src="images/screenshots/JenkinsLaunch.jpg" alt="Jenkins Launch" width="1000" height="400">
 </p>
 
 ---
@@ -107,13 +107,13 @@ ${TASK}
 ### Главная страница отчета
 
 <p align="center">
-<img src="images/screenshots/AllureReport.jpg" alt="Allure report" width="1000" height="500">
+<img src="images/screenshots/AllureReport.jpg" alt="Allure report" width="1000" height="400">
 </p>
 
 ### Тест-кейсы
 
 <p align="center">
-<img src="images/screenshots/AllureTestCases.jpg" alt="Test Case" width="1000" height="500">
+<img src="images/screenshots/AllureTestCases.jpg" alt="Test Case" width="1000" height="400">
 </p>
 
 #### Содержание тест-кейсов
@@ -132,7 +132,7 @@ ${TASK}
 ### Графики
 
 <p align="center">
-<img src="images/screenshots/AllureGraph.jpg" alt="Allure-graph" width="1000" height="500">
+<img src="images/screenshots/AllureGraph.jpg" alt="Allure-graph" width="1000" height="400">
 </p>
 
 ---
@@ -142,19 +142,19 @@ ${TASK}
 ### Dashboard
 
 <p align="center">
-<img src="images/screenshots/TestOps_dashboard.jpg" alt="TestOps dashboard" width="1000" height="500">
+<img src="images/screenshots/TestOps_dashboard.jpg" alt="TestOps dashboard" width="1000" height="400">
 </p>
 
 ### Ручные и автоматизированные тест-кейсы
 
 <p align="center">
-<img src="images/screenshots/TestOps_testCases.jpg" alt="TestOps test cases" width="1000" height="500">
+<img src="images/screenshots/TestOps_testCases.jpg" alt="TestOps test cases" width="1000" height="400">
 </p>
 
 ### Запуск автоматизированных тестов в **TestOps**
 
 <p align="center">
-<img src="images/screenshots/TestOps_launch.jpg" alt="TestOps launch" width="1000" height="500">
+<img src="images/screenshots/TestOps_launch.jpg" alt="TestOps launch" width="1000" height="400">
 </p>
 
 ---
@@ -164,7 +164,7 @@ ${TASK}
 ### Задача в Jira
 
 <p align="center">
-<img src="images/screenshots/Jira.jpg" alt="Jira" width="1000" height="500">
+<img src="images/screenshots/Jira.jpg" alt="Jira" width="1000" height="400">
 </p>
 
 #### Содержание задачи
