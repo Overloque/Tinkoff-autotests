@@ -59,7 +59,7 @@
 ## <img src="images/logo/Jenkins.svg" width="50" height="50"/> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/tinkoff_autotests_kpoludnitsyn/)
 
 <p align="center">
-<img src="images/screenshots/JenkinsPage.jpg" alt="Jenkins Page" width="1000" height="400">
+<img src="images/screenshots/JenkinsPage.jpg" alt="Jenkins Page" width="1000" height="350">
 </p>
 
 ### Параметры сборки проекта
