@@ -56,7 +56,7 @@
 
 ---
 
-## <img src="images/logo/Jenkins.svg" width="50" height="50"/> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/tinkoff_autotests_kpoludnitsyn/)
+## <img src="images/logo/Jenkins.svg" width="50" height="50"/> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/tinkoff_autotests_kpoludnitsyn_new/)
 
 <p align="center">
 <img src="images/screenshots/JenkinsPage.jpg" alt="Jenkins Page" width="1000" height="350">
@@ -102,7 +102,7 @@ ${TASK}
 
 ---
 
-## <img src="images/logo/Allure.svg" width="50" height="50"/> [Allure](https://jenkins.autotests.cloud/job/tinkoff_autotests_kpoludnitsyn/11/allure/) отчет
+## <img src="images/logo/Allure.svg" width="50" height="50"/> [Allure](https://jenkins.autotests.cloud/job/tinkoff_autotests_kpoludnitsyn_new/6/allure/) отчет
 
 ### Главная страница отчета
 
@@ -159,7 +159,7 @@ ${TASK}
 
 ---
 
-## <img src="images/logo/Jira.svg" width="50" height="50"/> Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-889)
+## <img src="images/logo/Jira.svg" width="50" height="50"/> Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-929)
 
 ### Задача в Jira
 
