@@ -105,14 +105,14 @@ ${TASK}
 Для запуска можно выбрать один из семи тест-сьютов:
 
 ```mermaid
-flowchart LR
-node1([Test Suites]) --> node2([Запуск всех тестов]) --> node3([test])
-node1([Test Suites]) --> node4([Запуск тестов на главную страницу]) --> node5([main_test])
-node1([Test Suites]) --> node6([Запуск тестов на раздел "Дебетовые карты"]) --> node7([debit_test])
-node1([Test Suites]) --> node8([Запуск тестов на раздел "Кредиты и ипотека"]) --> node9([credit_test])
-node1([Test Suites]) --> node10([Запуск тестов на раздел "Вклады"]) --> node11([savings_test])
-node1([Test Suites]) --> node12([Запуск тестов на раздел "Аналитика"]) --> node13([analytics_test])
-node1([Test Suites]) --> node14([Запуск тестов на раздел "Помощь"]) --> node15([help_test])
+graph LR
+A([Test Suites] --> B[Запуск всех тестов] --> C[test]
+A([Test Suites] --> D[Запуск тестов на главную страницу] --> E[main_test]
+A([Test Suites] --> F[Запуск тестов на раздел "Дебетовые карты"] --> G[debit_test]
+A([Test Suites] --> H[Запуск тестов на раздел "Кредиты и ипотека"] --> I[credit_test]
+A([Test Suites] --> J[Запуск тестов на раздел "Вклады"] --> K[savings_test]
+A([Test Suites] --> L[Запуск тестов на раздел "Аналитика"] --> M[analytics_test]
+A([Test Suites] --> N[Запуск тестов на раздел "Помощь"] --> O[help_test]
 ```
 
 ---
