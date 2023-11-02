@@ -105,14 +105,14 @@ ${TASK}
 Для запуска можно выбрать один из семи тест-сьютов:
 
 ```mermaid
-graph LR
-A([Test Suites] --> B[Запуск всех тестов] --> C[test]
-A([Test Suites] --> D[Запуск тестов на главную страницу] --> E[main_test]
-A([Test Suites] --> F[Запуск тестов на раздел "Дебетовые карты"] --> G[debit_test]
-A([Test Suites] --> H[Запуск тестов на раздел "Кредиты и ипотека"] --> I[credit_test]
-A([Test Suites] --> J[Запуск тестов на раздел "Вклады"] --> K[savings_test]
-A([Test Suites] --> L[Запуск тестов на раздел "Аналитика"] --> M[analytics_test]
-A([Test Suites] --> N[Запуск тестов на раздел "Помощь"] --> O[help_test]
+flowchart LR
+    A[Test Suite] --> B[Все тесты] --> C[test]
+    A --> D[Главная страница] --> E[main_test]
+    A --> F[Раздел 'Дебетовые карты'] --> G[debit_test]
+    A --> H[Раздел 'Кредиты и ипотека'] --> I[credit_test]
+    A --> J[Раздел 'Вклады'] --> K[savings_test]
+    A --> L[Раздел 'Аналитика'] --> M[analytics_test]
+    A --> N[Раздел 'Помощь'] --> O[help_test]
 ```
 
 ---
