@@ -178,7 +178,7 @@ ${TASK}
 
 ## <img src="images/logo/Telegram.svg" width="50" height="50"/> Уведомления в Telegram чат с ботом
 
-### Уведомление из переписки с чат ботом
+### Уведомление через чат бот
 
 <p align="center">
 <img src="images/screenshots/Telegram.jpg" alt="Telegram" width="500" height="400">
