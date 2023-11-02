@@ -3,12 +3,10 @@ package guru.qa.tests;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import guru.qa.config.WebConfig;
 import guru.qa.drivers.WebProvider;
 import guru.qa.helpers.Attach;
 import guru.qa.utils.TestDataVariables;
 import io.qameta.allure.selenide.AllureSelenide;
-import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -18,7 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class TestBase {
+public class BaseTest {
     TestDataVariables variables = new TestDataVariables();
 
     @BeforeAll

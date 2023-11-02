@@ -10,7 +10,7 @@ import static io.qameta.allure.Allure.step;
 @Feature("Проверка главной страницы")
 @Epic(value = "Проверка сайта Тинькофф")
 @Owner("Overloque")
-public class MainTests extends TestBase {
+public class MainTests extends BaseTest {
     MainPage mainPage = new MainPage();
 
     @Test

@@ -12,7 +12,7 @@ import static io.qameta.allure.Allure.step;
 @Feature("Проверка страницы аналитики")
 @Epic(value = "Проверка сайта Тинькофф")
 @Owner("Overloque")
-public class AnalyticsTests extends TestBase {
+public class AnalyticsTests extends BaseTest {
     AnalyticsPage analyticsPage = new AnalyticsPage();
 
     @Test

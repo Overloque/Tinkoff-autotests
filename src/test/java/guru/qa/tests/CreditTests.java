@@ -10,7 +10,7 @@ import static io.qameta.allure.Allure.step;
 @Feature("Проверка раздела 'Кредиты и ипотека'")
 @Epic(value = "Проверка сайта Тинькофф")
 @Owner("Overloque")
-public class CreditTests extends TestBase {
+public class CreditTests extends BaseTest {
     CreditPage creditPage = new CreditPage();
 
     @Test

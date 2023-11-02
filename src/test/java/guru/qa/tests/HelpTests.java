@@ -14,7 +14,7 @@ import static io.qameta.allure.Allure.step;
 @Feature("Проверка страницы помощи")
 @Epic(value = "Проверка сайта Тинькофф")
 @Owner("Overloque")
-public class HelpTests extends TestBase {
+public class HelpTests extends BaseTest {
     HelpPage helpPage = new HelpPage();
     MainPage mainPage = new MainPage();
 
