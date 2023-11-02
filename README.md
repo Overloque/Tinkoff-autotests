@@ -178,6 +178,12 @@ flowchart LR
 <img src="images/screenshots/TestOps_launch.jpg" alt="TestOps launch" width="1000" height="400">
 </p>
 
+### Запуск сборки из **Allure TestOps**
+
+<p align="center">
+<img src="images/screenshots/TestOps_launches.jpg" alt="TestOps launches" width="1000" height="250">
+</p>
+
 ---
 
 ## <img src="images/logo/Jira.svg" width="50" height="50"/> Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-929)
