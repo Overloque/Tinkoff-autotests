@@ -181,7 +181,7 @@ flowchart LR
 ### Запуск сборки из **Allure TestOps**
 
 <p align="center">
-<img src="images/screenshots/TestOps_launches.jpg" alt="TestOps launches" width="1000" height="250">
+<img src="images/screenshots/TestOps_launches.jpg" alt="TestOps launches">
 </p>
 
 ---
