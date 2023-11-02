@@ -100,6 +100,21 @@ ${TASK}
 -DremoteUrl=${REMOTE_URL}
 ```
 
+### Варианты запуска тестов
+
+Для запуска можно выбрать один из семи тест-сьютов:
+
+```mermaid
+flowchart LR
+node1([Test Suites]) --> node2([Запуск всех тестов]) --> node3([test])
+node1([Test Suites]) --> node4([Запуск тестов на главную страницу]) --> node5([main_test])
+node1([Test Suites]) --> node6([Запуск тестов на раздел "Дебетовые карты"]) --> node7([debit_test])
+node1([Test Suites]) --> node8([Запуск тестов на раздел "Кредиты и ипотека"]) --> node9([credit_test])
+node1([Test Suites]) --> node10([Запуск тестов на раздел "Вклады"]) --> node11([savings_test])
+node1([Test Suites]) --> node12([Запуск тестов на раздел "Аналитика"]) --> node13([analytics_test])
+node1([Test Suites]) --> node14([Запуск тестов на раздел "Помощь"]) --> node15([help_test])
+```
+
 ---
 
 ## <img src="images/logo/Allure.svg" width="50" height="50"/> [Allure](https://jenkins.autotests.cloud/job/tinkoff_autotests_kpoludnitsyn_new/6/allure/) отчет
