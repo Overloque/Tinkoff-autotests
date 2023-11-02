@@ -8,7 +8,7 @@
 - [Стек технологий](#computer-стек-технологий)  
 - [Тестовые сценарии](#clipboard-тестовые-сценарии)
 - [Сборка в Jenkins](#-сборка-в-jenkins)
-- [Команда для запуска](#rocket-команда-для-запуска)
+- [Команды для запуска](#rocket-команда-для-запуска)
 - [Allure отчет](#-allure-отчет)
 - [Интеграция с Allure TestOps](#-интеграция-с-allure-testops)
 - [Интеграция с Jira](#-интеграция-с-jira)
@@ -59,37 +59,45 @@
 ## <img src="images/logo/Jenkins.svg" width="50" height="50"/> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/tinkoff_autotests_kpoludnitsyn/)
 
 <p align="center">
-<img src="images/screenshots/JenkinsScreenshot.jpg" alt="Jenkins Build" width="1000" height="300">
+<img src="images/screenshots/JenkinsPage.jpg" alt="Jenkins Page" width="1000" height="400">
 </p>
 
 ### Параметры сборки проекта
 
 | Параметр        | Назначение                               |
 |-----------------|------------------------------------------|
-| SELENOID_URL    | Удаленный сервер для запуска тестов      |
+| REMOTE_URL      | Удаленный сервер для запуска тестов      |
 | BROWSER         | Браузер для запуска                      |
 | BROWSER_VERSION | Версия браузера                          |
 | BROWSER_SIZE    | Разрешение экрана                        |
-| COMMENT         | Комментарий                              |
+| BASE_URL        | Адрес сайта                              |
 | TASK            | Опция выбора запуска определённых тестов |
 
 ### Запуск тестов с параметрами в **Jenkins**
 
 <p align="center">
-<img src="images/screenshots/JenkinsLaunch.jpg" alt="Jenkins Launch" width="1000" height="400">
+<img src="images/screenshots/JenkinsLaunch.jpg" alt="Jenkins Launch" width="1000" height="500">
 </p>
 
 ---
 
-## :rocket: Команда для запуска
+## :rocket: Команды для запуска
 
+### Локальный запуск
+
+```bash
+gradle clean test
+```
+
+### Удаленный запуск
 ```bash
 clean
 ${TASK}
 -Dbrowser=${BROWSER}
 -DbrowserSize=${BROWSER_SIZE}
 -DbrowserVersion=${BROWSER_VERSION}
--DselenoidUrl=${SELENOID_LINK}
+-DbaseUrl=${BASE_URL}
+-DremoteUrl=${REMOTE_URL}
 ```
 
 ---
@@ -99,19 +107,20 @@ ${TASK}
 ### Главная страница отчета
 
 <p align="center">
-<img src="images/screenshots/Allure-report.jpg" alt="Allure report" width="1000" height="350">
+<img src="images/screenshots/AllureReport.jpg" alt="Allure report" width="1000" height="500">
 </p>
 
 ### Тест-кейсы
 
 <p align="center">
-<img src="images/screenshots/Allure-testCase.jpg" alt="Test Case" width="1000" height="350">
+<img src="images/screenshots/AllureTestCases.jpg" alt="Test Case" width="1000" height="500">
 </p>
 
 #### Содержание тест-кейсов
 
 - :heavy_check_mark: Подробное описание шагов
 - :heavy_check_mark: Тег
+- :heavy_check_mark: Эпик
 - :heavy_check_mark: Критичность теста
 - :heavy_check_mark: Автор
 - :heavy_check_mark: Ссылка на раздел сайта (для каждый тестов свой раздел)
@@ -123,7 +132,7 @@ ${TASK}
 ### Графики
 
 <p align="center">
-<img src="images/screenshots/Allure-graph.jpg" alt="Allure-graph" width="1000" height="400">
+<img src="images/screenshots/AllureGraph.jpg" alt="Allure-graph" width="1000" height="500">
 </p>
 
 ---
@@ -133,19 +142,19 @@ ${TASK}
 ### Dashboard
 
 <p align="center">
-<img src="images/screenshots/TestOps_dashboard.jpg" alt="TestOps dashboard" width="1000" height="400">
+<img src="images/screenshots/TestOps_dashboard.jpg" alt="TestOps dashboard" width="1000" height="500">
 </p>
 
 ### Ручные и автоматизированные тест-кейсы
 
 <p align="center">
-<img src="images/screenshots/TestOps_testCases.jpg" alt="TestOps test cases" width="1000" height="400">
+<img src="images/screenshots/TestOps_testCases.jpg" alt="TestOps test cases" width="1000" height="500">
 </p>
 
 ### Запуск автоматизированных тестов в **TestOps**
 
 <p align="center">
-<img src="images/screenshots/TestOps_launch.jpg" alt="TestOps launch" width="1000" height="400">
+<img src="images/screenshots/TestOps_launch.jpg" alt="TestOps launch" width="1000" height="500">
 </p>
 
 ---
@@ -155,7 +164,7 @@ ${TASK}
 ### Задача в Jira
 
 <p align="center">
-<img src="images/screenshots/Jira.jpg" alt="TestOps launch" width="1000" height="400">
+<img src="images/screenshots/Jira.jpg" alt="Jira" width="1000" height="500">
 </p>
 
 #### Содержание задачи
@@ -172,7 +181,7 @@ ${TASK}
 ### Уведомление из переписки с чат ботом
 
 <p align="center">
-<img src="images/screenshots/Telegram.jpg" alt="TestOps launch" width="500" height="400">
+<img src="images/screenshots/Telegram.jpg" alt="Telegram" width="500" height="400">
 </p>
 
 
