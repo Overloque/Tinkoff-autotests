@@ -6,7 +6,11 @@ plugins {
 group 'guru.qa'
 version '1.0'
 
-def allureVersion = "2.23.0"
+def allureVersion = "2.23.0",
+    selenideVersion = "6.16.0",
+    jupiterVersion = "5.9.3",
+    ownerVersion = "1.0.4",
+    fakerVersion = "1.0.2"
 
 allure {
     report {
@@ -28,11 +32,11 @@ repositories {
 
 dependencies {
     testImplementation(
-            'com.codeborne:selenide:6.16.0',
-            'com.github.javafaker:javafaker:1.0.2',
+            "com.codeborne:selenide:$selenideVersion",
+            "com.github.javafaker:javafaker:$fakerVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
-            'org.junit.jupiter:junit-jupiter:5.9.3',
-            'org.aeonbits.owner:owner:1.0.4'
+            "org.junit.jupiter:junit-jupiter:$jupiterVersion",
+            "org.aeonbits.owner:owner:$ownerVersion"
     )
 }
 
@@ -50,37 +54,37 @@ tasks.withType(Test) {
 }
 
 task main_test(type: Test) {
-    useJUnitPlatform{
+    useJUnitPlatform {
         includeTags("main")
     }
 }
 
 task debit_test(type: Test) {
-    useJUnitPlatform{
+    useJUnitPlatform {
         includeTags("debit")
     }
 }
 
 task credit_test(type: Test) {
-    useJUnitPlatform{
+    useJUnitPlatform {
         includeTags("loans")
     }
 }
 
 task savings_test(type: Test) {
-    useJUnitPlatform{
+    useJUnitPlatform {
         includeTags("savings")
     }
 }
 
 task analytics_test(type: Test) {
-    useJUnitPlatform{
+    useJUnitPlatform {
         includeTags("analytics")
     }
 }
 
 task help_test(type: Test) {
-    useJUnitPlatform{
+    useJUnitPlatform {
         includeTags("help")
     }
 }
