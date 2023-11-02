@@ -16,11 +16,8 @@ public class AnalyticsPage {
             post = $("[data-qa-tag=PulsePost]"),
             popUpWindow = $("[data-qa-file=Paper]");
 
-    public AnalyticsPage hoverAndClick() {
-        menuPopover.hover();
-        analyticsOption.click();
-        webdriver().shouldHave(url("https://www.tinkoff.ru/invest/research/"));
-
+    public AnalyticsPage openPage() {
+        open("/invest/research/");
         return this;
     }
 
