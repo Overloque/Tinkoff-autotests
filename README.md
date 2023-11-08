@@ -226,5 +226,5 @@ flowchart LR
 ## <img src="images/logo/Selenoid.svg" width="50" height="50"/> Видео запуска тестов в Selenoid
 
 <p align="center">
-<img src="images/gifs/Selenide_video.gif" alt="Selenide video" width="800" height="400">
+<img src="images/gifs/Selenide_video.gif" alt="Selenoid video" width="800" height="400">
 </p>
