@@ -228,9 +228,3 @@ flowchart LR
 <p align="center">
 <img src="images/gifs/Selenide_video.gif" alt="TestOps launch" width="800" height="400">
 </p>
-
-
-
-
-
-
