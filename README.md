@@ -123,7 +123,7 @@ flowchart LR
 
 ---
 
-## <img src="images/logo/Allure.svg" width="50" height="50"/> [Allure](https://jenkins.autotests.cloud/job/tinkoff_autotests_kpoludnitsyn_new/6/allure/) отчет
+## <img src="images/logo/Allure.svg" width="50" height="50"/> [Allure](https://jenkins.autotests.cloud/job/tinkoff_autotests_kpoludnitsyn_new/allure/) отчет
 
 ### Главная страница отчета
 
@@ -226,5 +226,5 @@ flowchart LR
 ## <img src="images/logo/Selenoid.svg" width="50" height="50"/> Видео запуска тестов в Selenoid
 
 <p align="center">
-<img src="images/gifs/Selenide_video.gif" alt="TestOps launch" width="800" height="400">
+<img src="images/gifs/Selenide_video.gif" alt="Selenide video" width="800" height="400">
 </p>
