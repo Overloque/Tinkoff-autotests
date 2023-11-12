@@ -5,7 +5,7 @@ import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import guru.qa.drivers.WebProvider;
 import guru.qa.helpers.Attach;
-import guru.qa.utils.TestDataVariables;
+import guru.qa.utils.TestData;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -17,7 +17,7 @@ import java.util.Map;
 
 
 public class BaseTest {
-    TestDataVariables variables = new TestDataVariables();
+    TestData variables = new TestData();
 
     @BeforeAll
     static void beforeAll() {
